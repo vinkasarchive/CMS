@@ -29,7 +29,10 @@
 <body>
   <section id="main">
     @include('sections.header')
-    @yield('content')
+    <div id="main-outlet" class="wrap">
+      @yield('content')
+    </div>
+    @include('sections.footer')
   </section>
   <div id="offscreen-content">
   </div>
